@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(x)
 	fmt.Printf("%T\n", x)
 
-	//Cannot be used since 
+	//Cannot be used since g1 is of type gator and x is of type int
 	x = g1
 	fmt.Println(x)
 	fmt.Println(g1)
