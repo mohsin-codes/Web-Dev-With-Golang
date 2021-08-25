@@ -23,4 +23,3 @@ func main() {
 		log.Fatalln(err)
 	}
 }
-cd 
