@@ -14,14 +14,14 @@ type people struct {
 }
 
 type car struct {
-	Manufacturer  string
-	Model string
-	Doors int
+	Manufacturer string
+	Model        string
+	Doors        int
 }
 
 type items struct {
-	peopleMentioned []people
-	transport      []car
+	PeopleMentioned []people
+	Transport       []car
 }
 
 func init() {
@@ -45,23 +45,23 @@ func main() {
 	}
 
 	f := car{
-		Manufacturer :  "Ford",
-		Model: "F-150",
-		Doors: 2,
+		Manufacturer: "Ford",
+		Model:        "F-150",
+		Doors:        2,
 	}
 
 	c := car{
-		Manufacturer :  "Toyota",
-		Model: "Corolla",
-		Doors : 4,
+		Manufacturer: "Toyota",
+		Model:        "Corolla",
+		Doors:        4,
 	}
 
 	importantPeople := []people{buddha, gandhi, aL}
 	cars := []car{f, c}
 
 	data := items{
-		peopleMentioned : importantPeople,
-		transport : cars,
+		PeopleMentioned: importantPeople,
+		Transport:       cars,
 	}
 
 	err := tpl.Execute(os.Stdout, data)
