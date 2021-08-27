@@ -24,9 +24,9 @@ func main() {
 }
 
 func handle(conn net.Conn) {
-	Scanner := bufio.NewScanner(conn)
-	for Scanner.Scan() {
-		ln := Scanner.Text()
+	scanner := bufio.NewScanner(conn)
+	for scanner.Scan() {
+		ln := scanner.Text()
 		fmt.Println(ln)
 	}
 	//This program will keep on running as the program gets stuck on the upper loop
