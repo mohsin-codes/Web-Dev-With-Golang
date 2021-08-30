@@ -9,7 +9,7 @@ import (
 type hotdog int
 
 func (h hotdog) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Mohsin-Key", "This is from Khan")
+	w.Header().Set("Mohsin-Key", "This is frotouhm Khan")
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	fmt.Fprintln(w, "<h1>This can be any heading. </h1>")
 }
